@@ -1,0 +1,16 @@
+{
+    "name": "pascalkrieger/laravel-cookie-consent",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Pascalkrieger\\LaravelCookieConsent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PascalKrieger",
+            "email": "82287749+PascalKrieger@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
