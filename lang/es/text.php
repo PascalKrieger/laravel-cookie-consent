@@ -14,6 +14,6 @@ return [
     'modal-heading' => 'Configurar Cookies',
     'configure' => 'Configurar',
     'accept' => 'Aceptar',
-    'back' => 'Volver'
-
+    'back' => 'Volver',
+    'my-cookies-button' => 'Mis Cookies',
 ];
