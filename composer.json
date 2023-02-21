@@ -6,11 +6,22 @@
             "Pascalkrieger\\LaravelCookieConsent\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pascalkrieger\\LaravelCookieConsent\\LaravelCookieConsentServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "PascalKrieger",
             "email": "82287749+PascalKrieger@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/support": "^10.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
