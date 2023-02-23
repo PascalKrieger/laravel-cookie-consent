@@ -1,4 +1,5 @@
 <div x-data="laravelCookieConsent()" x-cloak>
+
     <x-laravel-cookie-consent::message />
     <x-laravel-cookie-consent::config-modal />
     <x-laravel-cookie-consent::cookie-button />
@@ -16,13 +17,11 @@
                     if(this.cookieConfig) {
                         this.showCookieButton = true
                         this.formData = this.cookieConfig
-                        console.log(this.formData)
                     } else {
                         this.showMessage = true
                         this.allowedCookies.forEach(
                             cookie => this.formData[cookie.type] = cookie.checked
                         )
-                        console.log(this.formData)
                     }
                 },
                 configCookies () {
