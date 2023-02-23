@@ -18,18 +18,21 @@ return [
      */
     'cookie_lifetime' => 365 * 20,
 
+    /*
+     * List here all categories of cookies your application uses.
+     */
     'cookies' => [
         [
             'type' => 'Necessary',
             'description' => '(System, Security) - Always active',
-            'disabled' => true,
-            'checked' => true
+            'disabled' => true, 
+            'checked' => true 
         ],
         [
             'type' => 'Analytical',
             'description' => '(Google Analytics)',
             'disabled' => false,
-            'checked' => false
+            'checked' => true
         ]
     ]
 ];
