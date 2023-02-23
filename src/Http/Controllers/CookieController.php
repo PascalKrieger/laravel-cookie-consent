@@ -17,10 +17,6 @@ class CookieController extends BaseController
     {
         $request->session()->put('cookie-config', $request->all());
 
-        return response($request->all())->cookie(
-            Str::snake( env('APP_NAME') ) . '_cookie_config',
-            true,
-            60 * 24 * 7
-        );
+        return response($request->all())->cookie(config('laravel-cookie-consent.cookie_name'), true, config('laravel-cookie-consent.life_time'));
     }
 }

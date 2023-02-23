@@ -3,20 +3,15 @@
 return [
 
     /*
-     * Use this setting to enable the cookie consent dialog.
+     * Set the name of the cookie which will hold the 
+     * array of allowed cookies.
      */
-    'enabled' => env('COOKIE_CONSENT_ENABLED', true),
+    'cookie_name' => Str::snake( env('APP_NAME') ) . '_cookie_config',
 
     /*
-     * The name of the cookie in which we store if the user
-     * has agreed to accept the conditions.
+     * Set the cookie duration.
      */
-    'cookie_name' => 'laravel_cookie_consent',
-
-    /*
-     * Set the cookie duration in days.  Default is 365 * 20.
-     */
-    'cookie_lifetime' => 365 * 20,
+    'cookie_lifetime' => 60 * 24 * 7,
 
     /*
      * List here all categories of cookies your application uses.
@@ -31,6 +26,12 @@ return [
         [
             'type' => 'Analytical',
             'description' => '(Google Analytics)',
+            'disabled' => false,
+            'checked' => true
+        ],
+        [
+            'type' => 'Functional',
+            'description' => '(Online Chat)',
             'disabled' => false,
             'checked' => true
         ]

@@ -7,8 +7,7 @@
                 </div>
                 <div class="mt-2">
                     <div class="text-sm">
-                        Aquí puedes consultar las Cookies que utilizamos y configurar cuáles quieres permitir que se instalen en tu
-                        navegador web.
+                        {{ trans('laravel-cookie-consent::text.modal-body') }}
                     </div>
                     <form class="py-4" x-ref="form">
                         <template x-for="cookie in allowedCookies">
