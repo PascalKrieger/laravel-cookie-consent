@@ -10,6 +10,14 @@ If the user chooses to configure the cookies a modal will be displayed listing a
 
 The views are styled with tailwindcss and alpinejs leverages the rest, so these are prerequisite in your Laravel project.
 
+Once the preferences are saved, you can check in your views if a certain type of cookies is allowed like this: 
+
+`@if(session('cookie-config.Functional')) 
+//Your code, maybe a Google Analytics tag 
+@endif`
+
+Where 'Functional' is the type you specify in the config file.
+
 Include the blade component at the bottom of your page or layout: 
 
 `<x-laravel-cookie-consent::index />`
