@@ -22,9 +22,16 @@ class LaravelCookieConsentServiceProvider extends ServiceProvider {
 
         $this->publishes([
             __DIR__.'/../config/laravel-cookie-consent.php' => config_path('laravel-cookie-consent.php'),
+        ], 'laravel-cookie-consent-config');
+
+        $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-cookie-consent'),
             __DIR__.'/../lang' => $this->app->langPath('vendor/laravel-cookie-consent'),
-        ]);
+        ], 'laravel-cookie-consent-views');
+
+        $this->publishes([
+            __DIR__.'/../lang' => $this->app->langPath('vendor/laravel-cookie-consent'),
+        ], 'laravel-cookie-consent-lang');
     }
 
 }

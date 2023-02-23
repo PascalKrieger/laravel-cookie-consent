@@ -10,5 +10,7 @@ If the user chooses to configure the cookies a modal will be displayed listing a
 
 You should publish and edit the config file, run this command:
 
-
+`  
+php artisan vendor:publish --provider="Pascalkrieger\LaravelCookieConsent\LaravelCookieConsentServiceProvider" --tag="laravel-cookie-consent-config"  
+`
 
