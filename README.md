@@ -25,7 +25,7 @@ Where 'Functional' is the type you specify in the config file.
 You can install the package via composer:
 
 ``` bash
-composer require spatie/laravel-cookie-consent
+composer require pascalkrieger/laravel-cookie-consent
 ```
 
 ## Usage
