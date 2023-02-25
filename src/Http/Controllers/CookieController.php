@@ -15,8 +15,19 @@ class CookieController extends BaseController
      */
     public function __invoke(Request $request): Response
     {
+        $allowed_cookies = config('laravel-cookie-consent.cookies');
+        $validation_rules = [];
+        foreach($allowed_cookies as $cookie) {
+            $validation_rules[$cookie['type']] = 'required|boolean';
+        }
+
+        $valid_data = $request->validate($validation_rules);
+
+        return response($valid_data);
+        
         $request->session()->put('cookie-config', $request->all());
 
         return response($request->all())->cookie(config('laravel-cookie-consent.cookie_name'), true, config('laravel-cookie-consent.life_time'));
+
     }
 }
