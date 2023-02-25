@@ -22,10 +22,30 @@ Where 'Functional' is the type you specify in the config file.
 
 ## Installation
 
+This package is intended for use in existing Laravel projects using Tailwindcss and AlpineJS. 
+
 You can install the package via composer:
 
 ``` bash
 composer require pascalkrieger/laravel-cookie-consent
+```
+
+Tailwindcss and AlpineJS should be installed, if not install them following the instructions in their documentation.
+
+For Tailwindcss visit:  https://tailwindcss.com/docs/guides/laravel
+
+For AlpineJS visit: https://alpinejs.dev/essentials/installation
+
+Publish the views running: 
+
+```bash
+php artisan vendor:publish --provider="Pascalkrieger\LaravelCookieConsent\LaravelCookieConsentServiceProvider" --tag="laravel-cookie-consent-views"
+```
+
+Then run: 
+
+```bash
+npm run build
 ```
 
 ## Usage
