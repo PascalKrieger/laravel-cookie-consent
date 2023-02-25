@@ -22,8 +22,6 @@ class CookieController extends BaseController
         }
 
         $valid_data = $request->validate($validation_rules);
-
-        return response($valid_data);
         
         $request->session()->put('cookie-config', $request->all());
 
