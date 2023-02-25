@@ -1,5 +1,7 @@
 {
     "name": "pascalkrieger/laravel-cookie-consent",
+    "description": "Allow/disallow types of cookies in your Laravel Application",
+    "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -22,6 +24,6 @@
     "require": {
         "illuminate/support": "^8.0|^9.0|^10.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
