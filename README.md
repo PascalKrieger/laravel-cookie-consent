@@ -72,9 +72,11 @@ The package currently ships with translations for English and Spanish. you can e
     php artisan vendor:publish --provider="Pascalkrieger\LaravelCookieConsent\LaravelCookieConsentServiceProvider" --tag="laravel-cookie-consent-lang"
 ```
 
-Add a folder `lang/vendor/laravel-cookie-consent` with your language code, for example `lang/vendor/laravel-cookie-consent/de`, and place `text.php` within it.
+Add a folder to `lang/vendor/laravel-cookie-consent` with your language code, for example `lang/vendor/laravel-cookie-consent/de`, and place `text.php` with the following contents within it:
 
 ```php
+
+// lang/vendor/laravel-cookie-consent/de/text.php
 
 <?php
 
