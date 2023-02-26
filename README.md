@@ -63,3 +63,42 @@ You should publish and edit the config file, run this command:
 ```
 
 The code is pretty basic and self explanatory. As stated before this is work in progress, in use right now in some of my other projects. You´re welcome to use it as you wish. 
+
+## Localization
+
+The package currently ships with translations for English and Spanish. you can easily add more languages, first publish the packages lang folder with:
+
+```bash
+    php artisan vendor:publish --provider="Pascalkrieger\LaravelCookieConsent\LaravelCookieConsentServiceProvider" --tag="laravel-cookie-consent-lang"
+```
+
+Add a folder `lang/vendor/laravel-cookie-consent` with your language code, for example `lang/vendor/laravel-cookie-consent/de`, and place `text.php` within it.
+
+```php
+
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Laravel Cookie Consent Language Lines
+    |--------------------------------------------------------------------------
+    |
+    |
+    */
+
+    'modal-heading' => 'Cookie-Konfiguration',
+    'configure' => 'Konfigurieren',
+    'accept' => 'Akzeptieren',
+    'back' => 'Zurück',
+    'my-cookies-button' => 'Meine Cookies',
+
+    'modal-body' => 'Hier können Sie die von uns verwendeten Cookies überprüfen und konfigurieren, welche Cookies Sie in Ihrem Webbrowser installieren möchten.',
+
+    'message' => 'Wir verwenden unsere eigenen Cookies und Cookies von Drittanbietern beim Surfen auf der Website, um den Zugriff auf die Funktionen der Website zu ermöglichen, Verkehrsstatistiken zu extrahieren und die Benutzererfahrung zu verbessern. Sie können alle Cookies akzeptieren und auswählen, welche Sie aktivieren möchten. Weitere Informationen finden Sie in unserer Cookie-Richtlinie.',
+
+];
+
+
+```
