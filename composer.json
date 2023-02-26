@@ -21,9 +21,9 @@
             "email": "82287749+PascalKrieger@users.noreply.github.com"
         }
     ],
-    "require": {
-        "illuminate/support": "^8.0|^9.0|^10.0"
-    },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require": {
+        "illuminate/support": "^10.1"
+    }
 }
