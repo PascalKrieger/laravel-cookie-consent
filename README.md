@@ -18,7 +18,7 @@ Once the preferences are saved, you can check in your views if a certain type of
 @endif
 ```
 
-Where 'Functional' is the type you specify in the config file.
+Where `Functional` corresponds to one of the `type` values in the cookies array of your config file.
 
 ## Installation
 
@@ -72,7 +72,7 @@ The package currently ships with translations for English and Spanish. you can e
     php artisan vendor:publish --provider="Pascalkrieger\LaravelCookieConsent\LaravelCookieConsentServiceProvider" --tag="laravel-cookie-consent-lang"
 ```
 
-Add a folder to `lang/vendor/laravel-cookie-consent` with your language code, for example `lang/vendor/laravel-cookie-consent/de`, and place `text.php` with the following contents within it:
+Add a folder to `lang/vendor/laravel-cookie-consent` with your language code, for example `lang/vendor/laravel-cookie-consent/de`, and place a `text.php` file with the following contents within it:
 
 ```php
 
